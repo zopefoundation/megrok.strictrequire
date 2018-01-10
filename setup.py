@@ -9,6 +9,7 @@ long_description = '\n\n'.join([detailed, changes, ''])
 
 tests_require = [
     'zope.interface',
+    'zope.component',
     'zope.securitypolicy',
     ]
 
