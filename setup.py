@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os.path
 
-version = '0.7'
+version = '0.8.dev0'
 detailed = open(
     os.path.join('src', 'megrok', 'strictrequire', 'README.txt')).read()
 changes = open('CHANGES.txt').read()
