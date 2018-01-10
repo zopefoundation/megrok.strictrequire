@@ -1,6 +1,11 @@
 Changelog of megrok.strictrequire
 =================================
 
+0.7 (2018-01-10)
+----------------
+
+- Dependencies update in preparation of Python2/3 migration.
+
 0.6 (2013-10-16)
 ----------------
 
