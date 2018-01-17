@@ -50,17 +50,17 @@ grok.REST components::
     >>> grok_component('NoRequireXMLRPC', NoRequireXMLRPC)
     Traceback (most recent call last):
     ...
-    megrok.strictrequire.meta.SecurityError: megrok.strictrequire requires <class 'megrok.strictrequire.tests.fixtures.NoRequireXMLRPC'> to use the grok.require directive on the method: <...NoRequireXMLRPC.foobar...>!
+    megrok.strictrequire.meta.SecurityError: megrok.strictrequire requires <class 'megrok.strictrequire.tests.fixtures.NoRequireXMLRPC'> to use the grok.require directive on the method:...NoRequireXMLRPC.foobar...
 
     >>> grok_component('NoRequireREST', NoRequireREST)
     Traceback (most recent call last):
     ...
-    megrok.strictrequire.meta.SecurityError: megrok.strictrequire requires <class 'megrok.strictrequire.tests.fixtures.NoRequireREST'> to use the grok.require directive on the method: <...NoRequireREST.foobar...>!
+    megrok.strictrequire.meta.SecurityError: megrok.strictrequire requires <class 'megrok.strictrequire.tests.fixtures.NoRequireREST'> to use the grok.require directive on the method:...NoRequireREST.foobar...
 
     >>> grok_component('NoRequireJSON', NoRequireJSON)
     Traceback (most recent call last):
     ...
-    megrok.strictrequire.meta.SecurityError: megrok.strictrequire requires <class 'megrok.strictrequire.tests.fixtures.NoRequireJSON'> to use the grok.require directive on the method: <...NoRequireJSON.foobar...>!
+    megrok.strictrequire.meta.SecurityError: megrok.strictrequire requires <class 'megrok.strictrequire.tests.fixtures.NoRequireJSON'> to use the grok.require directive on the method:...NoRequireJSON.foobar...
 
 Of course, when the grok.require directive *is* used, there should not be any
 exception raised::
