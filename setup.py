@@ -1,22 +1,34 @@
-from setuptools import setup, find_packages
 import os.path
 
+from setuptools import setup, find_packages
+
 version = '0.8.dev0'
+
+
 detailed = open(
     os.path.join('src', 'megrok', 'strictrequire', 'README.txt')).read()
+
+
 changes = open('CHANGES.txt').read()
+
+
 long_description = '\n\n'.join([detailed, changes, ''])
 
+
 tests_require = [
-    'zope.interface',
     'zope.component',
+    'zope.interface',
     'zope.securitypolicy',
+    'zope.testing',
     ]
+
 
 setup(
     name='megrok.strictrequire',
     version=version,
-    description='Checks that all grokked "view-like" components require a permission.',
+    description=(
+        'Checks that all grokked "view-like" components '
+        'require a permission.'),
     long_description=long_description,
     classifiers=[],
     keywords=[],
@@ -32,9 +44,11 @@ setup(
     install_requires=[
         'setuptools',
         'martian',
-        'grok >= 1.8',
+        'grok >= 3.0',
         ],
-    extras_require = {'test': tests_require},
+    extras_require={
+        'test': tests_require
+        },
     tests_require=tests_require,
     entry_points={},
     )
