@@ -24,6 +24,7 @@ layer = zope.component.testlayer.ZCMLFileLayer(megrok.strictrequire.tests)
 
 checker = renormalizing.RENormalizing()
 
+
 def test_suite():
     suite = unittest.TestSuite()
     suite.addTest(
