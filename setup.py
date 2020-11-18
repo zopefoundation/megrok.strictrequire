@@ -6,10 +6,10 @@ version = '3.1.0.dev0'
 
 
 detailed = open(
-    os.path.join('src', 'megrok', 'strictrequire', 'README.txt')).read()
+    os.path.join('src', 'megrok', 'strictrequire', 'README.rst')).read()
 
 
-changes = open('CHANGES.txt').read()
+changes = open('CHANGES.rst').read()
 
 
 long_description = '\n\n'.join([detailed, changes, ''])
