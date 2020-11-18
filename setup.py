@@ -2,7 +2,7 @@ import os.path
 
 from setuptools import setup, find_packages
 
-version = '3.0.1.dev0'
+version = '3.1.0.dev0'
 
 
 detailed = open(
