@@ -8,7 +8,7 @@ set `grok.require` directive.
 This "assurance" is implemented by a custom grokker that checks whether a view
 component does have a required permission defined::
 
-    >>> from grok.testing import grok_component
+    >>> from grokcore.component.testing import grok_component
     >>> from megrok.strictrequire.tests.fixtures import (
     ...     NoRequireView, NoRequirePage, NoRequireViewlet)
     >>> grok_component('NoRequireView', NoRequireView)
