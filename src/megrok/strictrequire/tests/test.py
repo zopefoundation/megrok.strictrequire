@@ -24,11 +24,12 @@ layer = zope.component.testlayer.ZCMLFileLayer(megrok.strictrequire.tests)
 
 checker = renormalizing.RENormalizing()
 
+
 def test_suite():
     suite = unittest.TestSuite()
     suite.addTest(
         doctest.DocFileSuite(
-            'checkrequire.txt',
+            'checkrequire.rst',
             checker=checker,
             optionflags=(
                 doctest.NORMALIZE_WHITESPACE +
