@@ -20,6 +20,7 @@ tests_require = [
     'zope.interface',
     'zope.securitypolicy',
     'zope.testing',
+    'zope.testrunner',
 ]
 
 
