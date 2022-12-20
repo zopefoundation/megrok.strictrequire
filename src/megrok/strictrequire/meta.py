@@ -11,8 +11,8 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
-import martian
 import grok
+import martian
 
 
 class SecurityError(grok.GrokError):

@@ -13,16 +13,14 @@
 ##############################################################################
 
 import doctest
-import megrok.strictrequire.tests
 import unittest
+
 import zope.component.testlayer
 
-from zope.testing import renormalizing
+import megrok.strictrequire.tests
 
 
 layer = zope.component.testlayer.ZCMLFileLayer(megrok.strictrequire.tests)
-
-checker = renormalizing.RENormalizing()
 
 
 def test_suite():
@@ -30,10 +28,8 @@ def test_suite():
     suite.addTest(
         doctest.DocFileSuite(
             'checkrequire.rst',
-            checker=checker,
             optionflags=(
                 doctest.NORMALIZE_WHITESPACE +
-                doctest.ELLIPSIS +
-                renormalizing.IGNORE_EXCEPTION_MODULE_IN_PYTHON2)))
+                doctest.ELLIPSIS)))
     suite.layer = layer
     return suite
