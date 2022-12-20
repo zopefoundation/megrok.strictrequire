@@ -1,8 +1,8 @@
 Changelog of megrok.strictrequire
 =================================
 
-3.1.0 (unreleased)
-------------------
+4.0 (unreleased)
+----------------
 
 - Add support for Python 3.7 up to 3.9.
 
