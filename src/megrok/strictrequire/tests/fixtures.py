@@ -56,27 +56,6 @@ class NoRequireEditForm(grok.EditForm):
     grok.context(zope.interface.Interface)
 
 
-class NoRequireXMLRPC(grok.XMLRPC):
-    grok.context(zope.interface.Interface)
-
-    def foobar(self):
-        pass
-
-
-class NoRequireREST(grok.REST):
-    grok.context(zope.interface.Interface)
-
-    def foobar(self):
-        pass
-
-
-class NoRequireJSON(grok.JSON):
-    grok.context(zope.interface.Interface)
-
-    def foobar(self):
-        pass
-
-
 class RequireView(grok.View):
     grok.context(zope.interface.Interface)
     grok.require('zope.Public')
@@ -106,51 +85,3 @@ class RequireAddForm(grok.AddForm):
 class RequireEditForm(grok.EditForm):
     grok.context(zope.interface.Interface)
     grok.require('zope.Public')
-
-
-class RequireXMLRPC(grok.XMLRPC):
-    grok.context(zope.interface.Interface)
-    grok.require('zope.Public')
-
-    def foobar(self):
-        pass
-
-
-class RequireREST(grok.REST):
-    grok.context(zope.interface.Interface)
-    grok.require('zope.Public')
-
-    def foobar(self):
-        pass
-
-
-class RequireJSON(grok.JSON):
-    grok.context(zope.interface.Interface)
-    grok.require('zope.Public')
-
-    def foobar(self):
-        pass
-
-
-class RequireOnMethodXMLRPC(grok.XMLRPC):
-    grok.context(zope.interface.Interface)
-
-    @grok.require('zope.Public')
-    def foobar(self):
-        pass
-
-
-class RequireOnMethodREST(grok.REST):
-    grok.context(zope.interface.Interface)
-
-    @grok.require('zope.Public')
-    def foobar(self):
-        pass
-
-
-class RequireOnMethodJSON(grok.JSON):
-    grok.context(zope.interface.Interface)
-
-    @grok.require('zope.Public')
-    def foobar(self):
-        pass

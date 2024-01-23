@@ -61,7 +61,7 @@ setup(
     install_requires=[
         'setuptools',
         'martian',
-        'grok >= 3.0',
+        'grok >= 5.0a1',
     ],
     extras_require={
         'test': tests_require
