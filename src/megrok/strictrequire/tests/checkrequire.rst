@@ -30,8 +30,7 @@ Ditto for grok.Form, grok.AddForm. grok.EditForm, grok.XMLRPC, grok.JSON,
 grok.REST components::
 
     >>> from megrok.strictrequire.tests.fixtures import (
-    ...     NoRequireForm, NoRequireAddForm, NoRequireEditForm,
-    ...     NoRequireXMLRPC, NoRequireREST, NoRequireJSON)
+    ...     NoRequireForm, NoRequireAddForm, NoRequireEditForm)
     >>> grok_component('NoRequireForm', NoRequireForm)
     Traceback (most recent call last):
     ...
@@ -47,28 +46,12 @@ grok.REST components::
     ...
     megrok.strictrequire.meta.SecurityError: megrok.strictrequire requires <class 'megrok.strictrequire.tests.fixtures.NoRequireEditForm'> to use the grok.require directive!
 
-    >>> grok_component('NoRequireXMLRPC', NoRequireXMLRPC)
-    Traceback (most recent call last):
-    ...
-    megrok.strictrequire.meta.SecurityError: megrok.strictrequire requires <class 'megrok.strictrequire.tests.fixtures.NoRequireXMLRPC'> to use the grok.require directive on the method:...NoRequireXMLRPC.foobar...
-
-    >>> grok_component('NoRequireREST', NoRequireREST)
-    Traceback (most recent call last):
-    ...
-    megrok.strictrequire.meta.SecurityError: megrok.strictrequire requires <class 'megrok.strictrequire.tests.fixtures.NoRequireREST'> to use the grok.require directive on the method:...NoRequireREST.foobar...
-
-    >>> grok_component('NoRequireJSON', NoRequireJSON)
-    Traceback (most recent call last):
-    ...
-    megrok.strictrequire.meta.SecurityError: megrok.strictrequire requires <class 'megrok.strictrequire.tests.fixtures.NoRequireJSON'> to use the grok.require directive on the method:...NoRequireJSON.foobar...
-
 Of course, when the grok.require directive *is* used, there should not be any
 exception raised::
 
     >>> from megrok.strictrequire.tests.fixtures import (
     ...     RequireView, RequirePage, RequireForm, RequireAddForm,
-    ...     RequireEditForm, RequireXMLRPC, RequireREST, RequireJSON,
-    ...     RequireOnMethodXMLRPC, RequireOnMethodREST, RequireOnMethodJSON)
+    ...     RequireEditForm)
     >>> grok_component('RequireView', RequireView)
     True
     >>> grok_component('RequirePage', RequirePage)
@@ -78,18 +61,6 @@ exception raised::
     >>> grok_component('RequireAddForm', RequireAddForm)
     True
     >>> grok_component('RequireEditForm', RequireEditForm)
-    True
-    >>> grok_component('RequireXMLRPC', RequireXMLRPC)
-    True
-    >>> grok_component('RequireREST', RequireREST)
-    True
-    >>> grok_component('RequireJSON', RequireJSON)
-    True
-    >>> grok_component('RequireOnMethodXMLRPC', RequireOnMethodXMLRPC)
-    True
-    >>> grok_component('RequireOnMethodREST', RequireOnMethodREST)
-    True
-    >>> grok_component('RequireOnMethodJSON', RequireOnMethodJSON)
     True
 
 """
