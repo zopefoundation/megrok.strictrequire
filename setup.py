@@ -1,6 +1,5 @@
 import os.path
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -53,8 +52,7 @@ setup(
     url='http://www.thehealthagency.com',
     license='ZPL 2.1',
     package_dir={'': 'src'},
-    namespace_packages=['megrok'],
-    packages=find_packages('src'),
+    packages=['megrok.strictrequire'],
     include_package_data=True,
     zip_safe=False,
     python_requires='>=3.7',
