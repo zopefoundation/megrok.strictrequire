@@ -9,7 +9,7 @@ Changelog of megrok.strictrequire
 - Drop support for ``grok < 5``, thus dropping support for JSON, REST and
   XMLRPC.
 
-- Add support for Python 3.7, 3.8, 3.9, 3.10, 3.11.
+- Add support for Python 3.7, 3.8, 3.9, 3.10, 3.11, 3.12.
 
 
 3.0.0 (2018-01-17)
