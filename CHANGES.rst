@@ -1,7 +1,7 @@
 Changelog of megrok.strictrequire
 =================================
 
-4.0 (unreleased)
+4.0 (2024-01-25)
 ----------------
 
 - Drop support for Python 2.7, 3.4, 3.5, 3.6.
