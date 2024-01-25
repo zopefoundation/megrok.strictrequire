@@ -3,7 +3,7 @@ import os.path
 from setuptools import setup
 
 
-version = '4.0.dev0'
+version = '5.0.dev0'
 
 
 detailed = open(
@@ -43,6 +43,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],

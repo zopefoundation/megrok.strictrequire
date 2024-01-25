@@ -1,7 +1,14 @@
 Changelog of megrok.strictrequire
 =================================
 
-4.0 (unreleased)
+5.0 (unreleased)
+----------------
+
+- Drop support for explicit (pkg_resources) namespaces and replace it with
+  an implicit (PEP 440) namespace.
+
+
+4.0 (2024-01-25)
 ----------------
 
 - Drop support for Python 2.7, 3.4, 3.5, 3.6.
@@ -9,10 +16,7 @@ Changelog of megrok.strictrequire
 - Drop support for ``grok < 5``, thus dropping support for JSON, REST and
   XMLRPC.
 
-- Drop support for explicit (pkg_resources) namespaces and replace it with
-  an implicit (PEP 440) namespace.
-
-- Add support for Python 3.7, 3.8, 3.9, 3.10, 3.11.
+- Add support for Python 3.7, 3.8, 3.9, 3.10, 3.11, 3.12.
 
 
 3.0.0 (2018-01-17)
