@@ -5,7 +5,7 @@ Changelog of megrok.strictrequire
 ----------------
 
 - Drop support for explicit (pkg_resources) namespaces and replace it with
-  an implicit (PEP 440) namespace.
+  an implicit (PEP 420) namespace.
 
 
 4.0 (2024-01-25)
