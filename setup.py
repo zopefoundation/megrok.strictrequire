@@ -1,10 +1,9 @@
 import os.path
 
-from setuptools import find_packages
 from setuptools import setup
 
 
-version = '4.1.dev0'
+version = '5.0.dev0'
 
 
 detailed = open(
@@ -22,7 +21,7 @@ tests_require = [
     'zope.interface',
     'zope.securitypolicy',
     'zope.testing',
-    'zope.testrunner',
+    'zope.testrunner >= 6.4',
 ]
 
 
@@ -54,8 +53,7 @@ setup(
     url='http://www.thehealthagency.com',
     license='ZPL 2.1',
     package_dir={'': 'src'},
-    namespace_packages=['megrok'],
-    packages=find_packages('src'),
+    packages=['megrok.strictrequire'],
     include_package_data=True,
     zip_safe=False,
     python_requires='>=3.7',
