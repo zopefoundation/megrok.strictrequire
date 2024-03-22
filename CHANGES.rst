@@ -1,7 +1,7 @@
 Changelog of megrok.strictrequire
 =================================
 
-5.0 (unreleased)
+5.0 (2024-03-22)
 ----------------
 
 - Drop support for explicit (pkg_resources) namespaces and replace it with
