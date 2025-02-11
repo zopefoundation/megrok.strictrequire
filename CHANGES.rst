@@ -4,7 +4,7 @@ Changelog of megrok.strictrequire
 5.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix how PEP 420 namespace is used in ``setup.py``.
 
 
 5.0 (2024-03-22)
