@@ -4,7 +4,9 @@ Changelog of megrok.strictrequire
 5.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add support for Python 3.13.
+
+- Drop support for Python 3.7, 3.8.
 
 
 5.0 (2024-03-22)
