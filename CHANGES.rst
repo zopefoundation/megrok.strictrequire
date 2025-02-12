@@ -6,6 +6,9 @@ Changelog of megrok.strictrequire
 
 - Fix how PEP 420 namespace is used in ``setup.py``.
 
+- Add support for Python 3.13.
+
+- Drop support for Python 3.7, 3.8.
 
 5.0 (2024-03-22)
 ----------------
