@@ -3,7 +3,7 @@ import os.path
 from setuptools import setup
 
 
-version = '5.1'
+version = '5.2.dev0'
 
 
 detailed = open(
