@@ -1,7 +1,7 @@
 Changelog of megrok.strictrequire
 =================================
 
-5.2 (unreleased)
+5.2 (2026-01-22)
 ----------------
 
 - Move package metadata from setup.py to pyproject.toml.
