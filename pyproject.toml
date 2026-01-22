@@ -10,7 +10,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "megrok.strictrequire"
-version = "5.2"
+version = "5.3.dev0"
 description = "Checks that all grokked \"view-like\" components require a permission."
 license = "ZPL-2.1"
 classifiers = [

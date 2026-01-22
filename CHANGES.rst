@@ -1,6 +1,12 @@
 Changelog of megrok.strictrequire
 =================================
 
+5.3 (unreleased)
+----------------
+
+- Nothing changed yet.
+
+
 5.2 (2026-01-22)
 ----------------
 
